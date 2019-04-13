@@ -1,11 +1,7 @@
 import re, os, sys, argparse, time
 import requests
 from bs4 import BeautifulSoup as bs
-from base64 import b64decode
-from functools import partial
-# from itertools import count, izip
 from urllib.parse import urlparse
-from multiprocessing.dummy import Pool
 
 def download(url, filename, reporthook=None):
 	blocksize = 4096
